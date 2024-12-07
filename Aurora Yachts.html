@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Yacht - Luxury and Sustainability</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            color: #fff;
+            
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        header .logo:hover {
+            color: #00bfff;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a,
+        header .sustainability-link {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover,
+        header .sustainability-link:hover {
+            color: #00bfff;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: left;
+            padding: 20px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero {
+            background: url('https://wallpapercat.com/w/full/c/6/a/1273875-2880x1800-desktop-hd-yacht-background-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .hero .content {
+            padding: 20px;
+            border-radius: 8px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            animation: slideInDown 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .features {
+            background: url('https://images7.alphacoders.com/653/653435.jpg') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+        }
+
+        .features::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
+        .features .content {
+            z-index: 1;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            background: url('https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVnYSUyMHlhY2h0fGVufDB8fDB8fHww') no-repeat center center/cover;
+            color: #fff;
+            position: relative;
+        }
+
+        .gallery::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .gallery .content {
+            z-index: 1;
+        }
+
+        .gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        .explore-btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background: #00bfff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .explore-btn:hover {
+            background: #fff;
+            color: #00bfff;
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="window.location.href='Aurora Yachts.html'">Aurora Yacht</div>
+        <nav>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="content">
+            <h1>Luxury Meets Sustainability</h1>
+            <p>Explore our commitment to innovation, luxury, and eco-friendly design in the world of mega yachts.</p>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="content">
+            <h2>Our Features</h2>
+            <p>Unmatched luxury, cutting-edge technology, and a dedication to sustainability are at the heart of every Aurora Yacht.</p>
+            <button class="explore-btn" onclick="window.location.href='features.html'">Explore Features</button>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <div class="content">
+            <h2>Gallery</h2>
+            <p>Immerse yourself in the beauty of our yachts and the oceans they were built to protect.</p>
+            <button class="explore-btn" onclick="window.location.href='gallery.html'">Explore Gallery</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Aurora Yacht. All rights reserved.</p>
+    </footer>
+</body>
+</html>
