@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Features - Aurora Yacht</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            color: #fff;
+            
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        header .logo:hover {
+            color: #00bfff;
+        }
+
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #00bfff;
+        }
+
+        section {
+            padding: 80px 40px;
+        }
+
+        .hero {
+            height: 60vh;
+            background: url('https://wallpapercat.com/w/full/c/6/a/1273875-2880x1800-desktop-hd-yacht-background-image.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+        }
+
+        .features-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .feature-item:hover {
+            transform: scale(1.05);
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .feature-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #000;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" onclick="window.location.href='Aurora Yachts.html'">Aurora Yacht</div>
+        <nav>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>Explore Features</h1>
+    </section>
+    <section>
+        <h2 style="text-align: center;">Unmatched Luxury and Innovation</h2>
+        <p style="text-align: center; max-width: 600px; margin: 20px auto;">
+            Discover the key features that make Aurora Yachts a blend of luxury, innovation, and sustainability.
+        </p>
+        <div class="features-list">
+            <div class="feature-item">
+                <img src="https://images7.alphacoders.com/653/653435.jpg" alt="Luxury">
+                <h3>Exquisite Luxury</h3>
+                <p>Crafted with the finest materials, each yacht exudes elegance and sophistication.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://wallpapercat.com/w/full/9/4/5/1273873-1920x1200-desktop-hd-yacht-wallpaper-photo.jpg" alt="Technology">
+                <h3>Innovative Technology</h3>
+                <p>Equipped with cutting-edge navigation, entertainment, and safety systems.</p>
+            </div>
+            <div class="feature-item">
+                <img src="https://plus.unsplash.com/premium_photo-1680831748191-d726a2f7b201?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVnYSUyMHlhY2h0fGVufDB8fDB8fHww" alt="Design">
+                <h3>Custom Design</h3>
+                <p>Each yacht is tailored to reflect your vision and meet your unique needs.</p>
+            </div>
+            <div class="feature-item" onclick="window.location.href='sustainability.html'" style="cursor: pointer;">
+                <img src="https://images.unsplash.com/photo-1665462773147-fa8aff9d62dc?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sustainability">
+                <h3>Sustainability</h3>
+                <p>Solar-powered energy systems and eco-friendly designs to protect our oceans.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Aurora Yacht. All rights reserved.</p>
+    </footer>
+</body>
+</html>
